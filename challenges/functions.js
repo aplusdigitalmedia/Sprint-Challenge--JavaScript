@@ -10,7 +10,7 @@ function manners(x, y, cb){
   cb(x + y);
 };
 whatsUp("Your", "Welcome", (whatYouSay)=>{
-  //console.log(whatYouSay);
+  console.log(whatYouSay);
 });
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -29,14 +29,14 @@ function add(num1, num2, cb){
   cb((num1*num2))
   };
  add(3, 5, (product)=>{
-  //console.log(product);
+  console.log(product);
   });
 function whatsUp(first, last, cb){
     cb(first + last);
     };
-   // whatsUp("Bob", "Smith", (fullName)=>{
-    //console.log("Hello," + " " + (fullName));
-    //});
+    whatsUp("Bob", "Smith", (fullName)=>{
+    console.log("Hello," + " " + (fullName));
+    });
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 //consume(2,2,add); // 4
 // consume(10,16,multiply); // 160
