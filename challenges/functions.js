@@ -6,7 +6,7 @@
   * The last parameter accepts a callback 
   * In the body of the function return the callback with the two parameters that you created
 */
-function manners(x, y, cb){
+function whatsUp(x, y, cb){
   cb(x + y);
 };
 whatsUp("Your", "Welcome", (whatYouSay)=>{
@@ -17,30 +17,32 @@ whatsUp("Your", "Welcome", (whatYouSay)=>{
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-function add(num1, num2, cb){
+//addition 
+function consume(num1, num2, cb){
   cb((num1+num2));
   };
-  const consume = new add(3, 5, (add)=>{
-  //console.log(add);
-  });
-  
-
-  function multiply(num1, num2, cb){
-  cb((num1*num2))
+function add(consume){
+  console.log(consume);
   };
- add(3, 5, (product)=>{
-  console.log(product);
-  });
-function whatsUp(first, last, cb){
+
+//multiplication
+function consume(num1, num2, cb){
+  cb((num1*num2));
+  };
+function multiply(consume){
+  console.log(consume);
+  };
+//greeting
+function consume(first, last, cb){
     cb(first + last);
     };
-    whatsUp("Bob", "Smith", (fullName)=>{
-    console.log("Hello," + " " + (fullName));
-    });
+function greeting(consume){
+    console.log("Hello," + " " + (consume), "nice to meet you!");
+    };
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-//consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
